@@ -116,7 +116,6 @@ public class AppUserService {
         phoneDAK.deleteByAppUserId(id);
         appUserDAK.deleteById(id);
         
-
-        return ResponseEntity.status(HttpStatus.CREATED).build();
+        return ResponseEntity.ok().build();
     }
 }
